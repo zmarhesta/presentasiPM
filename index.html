@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Bahasa dan Tata Bahasa Formal</h3>
+					<h4>Kelompok 1</h4>
+					<ul>
+						<li>50414178 - Addi Joparas Shafat</li>
+						<li>55414211 - Imam Auliya Nurakhman</li>
+						<li>59414234 - Rianita Giovanni Katryn</li>
+						<li>5C414173 - Wais Quranda</li>
+						<li>5D414042 - Zubeir Muhammad Arhesta</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Mukadimah</h1>
+					<ul>
+						<li>Teori bahasa membicarakan bahasa formal (formal language), terutama untuk kepentingan perancangan kompilator (compiler) dan pemroses naskah (text processor)</li>
+						<li>Bahasa formal adalah kumpulan kalimat. Semua kalimat dalam sebuah bahasa dibangkitkan oleh sebuah tata bahasa (grammar) yang sama</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Term Dasar dalam Tata Bahasa Formal</h3>
+					<ol>
+						<li>Sintaks</li>
+						<li>Semantik</li>
+						<li>Simbol</li>
+						<li>
+							<p>String</p>
+							<p>panjang w = |w|. Contoh →  w = abcd sehingga |w| = 4</p>
+						</li>
+						<li>
+							<p>String Hampa</p>
+							<p>dilambangkan dengan ε  sehingga |ε| = 0</p>
+						</li>
+					</ol>
+				</section>
+				<section>
+					<h3>Komponen Pembangun Tata Bahasa yang Formal</h3>
+					<ol>
+						<li>Himpunan berhingga tidak kosong dari simbol-simbol non terminal T1</li>
+						<li>Himpunan berhingga dari simbol-simbol non-terminal N </li>
+						<li>Simbol awal S ∈ N, yang merupakan salah satu anggota dari himpunan simbol nonterminal  </li>
+						<li>Himpunan berhingga aturan produksi P yang setiap elemennya dituliskan dalam bentuk : α → β</li>
+					</ol>
+				</section>
+				<section>
+					<h3>Grammar</h3>
+					<p style="font-size:80%">Grammar adalah susunan simbol-simbol dalam string-string suatu bahasa mengikuti aturan-aturan grammar (pembentukan) tertentu<p>
+					<p><strong>G = (V, T, P, S)</strong></p>
+					<ol style="font-size:60%">
+						<li><p>V adalah himpunan simbol nonterminal atau variabel. Contoh → V = {A, B, C}</p></li>
+						<li><p>T adalah himpunan simbol teminal. Contoh → T = {a, b}</p></li>
+						<li><p>P adalah himpunan aturan produksi. α → β. Contoh → S → AB | ab</p></li>
+						<li><p>S adalah simbol awal. Contoh → S (biasa dinotasikan dengan huruf “S”)</p></li>
+					</ol>
+				</section>
+				<section>
+					<section>
+						<h1>Tata Bahasa Formal Menurut Chomsky</h1>
+						<ol>
+							<li>Tata Bahasa Reguler</li>
+							<li>Tata Bahasa Bebas Konteks</li>
+							<li>Tata Bahasa Sensitif Konteks</li>
+							<li>Tata Bahasa Tanpa Batas</li>
+						</ol>
+					</section>
+					<section>
+						<table>
+							<thead>
+								<tr>
+									<th>Bahasa</th>
+									<th>Mesin Automata</th>
+									<th>Batasan Aturan Produksi</th>
+								</tr>
+							</thead>
+							<tbody style="font-size:60%">
+								<tr>
+									<td>Tipe 3 - Regular</td>
+									<td>FSA yang meliputi DFA & NFA</td>
+									<td>α adalah simbol variabel dan β berisi maksimal 1 simbol variabel yang jika ada terletak paling kanan</td>
+								</tr>
+								<tr>
+									<td>Tipe 2 - Bebas Konteks</td>
+									<td>Push Down Automata (PDA)</td>
+									<td>α berupa sebuah simbol variabel</td>
+								</tr>
+								<tr>
+									<td>Tipe 1 - Sensitif Konteks</td>
+									<td>Linier Bounded Automata</td>
+									<td>|α| <= |β|</td>
+								</tr>
+								<tr>
+									<td>Tipe 0 - Tanpa Batas</td>
+									<td>Mesin Turing</td>
+									<td>Tidak ada batasan</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

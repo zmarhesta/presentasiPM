@@ -144,14 +144,14 @@
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Parallax background image
-			parallaxBackgroundImage: '', // CSS syntax, e.g. "a.jpg"
+			parallaxBackgroundImage: 'http://technozed.com/wp-content/uploads/2016/03/firewatch-wallpaper-11.jpg', // CSS syntax, e.g. "a.jpg"
 
 			// Parallax background size
-			parallaxBackgroundSize: '', // CSS syntax, e.g. "3000px 2000px"
+			parallaxBackgroundSize: '2560px 1600px', // CSS syntax, e.g. "3000px 2000px"
 
 			// Amount of pixels to move the parallax background per slide step
-			parallaxBackgroundHorizontal: null,
-			parallaxBackgroundVertical: null,
+			parallaxBackgroundHorizontal: 200,
+			parallaxBackgroundVertical: 50,
 
 			// The maximum number of pages a single slide can expand onto when printing
 			// to PDF, unlimited by default
@@ -1426,7 +1426,7 @@
 	 * target element.
 	 *
 	 * remaining height = [ configured parent height ] - [ current parent height ]
-	 * 
+	 *
 	 * @param {HTMLElement} element
 	 * @param {number} [height]
 	 */
@@ -3900,7 +3900,7 @@
 			// If there are media elements with data-autoplay,
 			// automatically set the autoSlide duration to the
 			// length of that media. Not applicable if the slide
-			// is divided up into fragments. 
+			// is divided up into fragments.
 			// playbackRate is accounted for in the duration.
 			if( currentSlide.querySelectorAll( '.fragment' ).length === 0 ) {
 				toArray( currentSlide.querySelectorAll( 'video, audio' ) ).forEach( function( el ) {

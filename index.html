@@ -32,127 +32,116 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="#000000">
-          <h2 style="color:#ffffff">Pemrograman Multimedia</h2>
+								<section data-background="#000000">
+          <h2 style="color:#ffffff">Pengantar Sistem Terdistribusi</h2>
 				</section>
 				<section data-background="grey">
-					<h2>VRML</h2>
-						<h4>Kelompok 5</h4>
+					<h2>DDMS</h2>
+                                        <h3><i>Distributed Data Management System</i></h3>
+						<h4>Kelompok 7</h4>
 						<ul style="font-size:80%">
-							<li>50414043 - Abdul Rofiq</li>
-							<li>52414941 - Dhini Harnes</li>
-							<li>54414859 - Havids Hardiansyah</li>
-							<li>58414184 - Nurrohimah</li>
-							<li>5D414042 - Zubeir Muhammad Arhesta</li>
+							<li>Dhini Harnes</li>
+							<li>Nurrohimah</li>
+                                                        <li>Wandi Muhammad Arif</li>
+							<li>Zubeir Muhammad Arhesta</li>
 						</ul>
-					<p style="font-size:70%">Slide bisa diakses di --> <strong>https://zmarhesta.github.io/presentasiPM</strong></p>
+					<p style="font-size:70%">Slide bisa diakses di --> <strong>https://zmarhesta.github.io/presentasiPST</strong></p>
 				</section>
 				<section>
-					<h2>Overview VRML</h2>
-					<ul style="font-size:70%">
-						<li>VRML - <strong>V</strong>irtual <strong>R</strong>eality <strong>M</strong>odelling <strong>L</strong>anguage</li>
-						<li>VRML biasa dibaca "<i>vermal</i>"</li>
-						<li>VRML cara khusus untuk menampilkan objek 3D melalui <i>World Wide Web</i></li>
-						<li>VRML memiliki ekstensi file berupa *.wrl</li>
-						<li>VRML bisa dimuat di browser jika browser:
-							<ul>
-						    <li>adalah browser khusus VRML seperti <br>Fraunhofer Institute's <strong>CASUS Presenter</strong>, <br>Sony's <strong>Community Place</strong>, <br>Silicon Graphics' <strong>Cosmo Player</strong>, <br>dan yang lainnya</li>
-							  <li>dilengkapi dengan plug-in VRML</li>
-							</ul>
-						</li>
-						<li>VRML juga menggunakan prinsip Pemrograman Berbasis Objek</li>
-					</ul>
-				</section>
+					<h2>Pengertian Data Terdistribusi</h2>
+					<p>Pengolahan data terdistribusi pada sistem komputer saat ini digambarkan sebagai banyak komputer atau processor yang besar maupun kecil dalam jarak yang jauh yang dihubungkan dengan jaringan telekomunikasi. Hal yang penting dalam sistem terdistribusi adalah lokasi dan masalah perancangan data.</p>
 				</section>
 				<section>
-					<section>
-						<h2>Sejarah VRML</h2>
-						<p>VRML 1.0</p>
-						<p>VRML 2.0</p>
-						<p>X3D</p>
+                                  <h2>Beberapa Definisi DT</h2>
+                                  <p>Penempatan sumber daya komputer pada pemakainya.</p>
+                                  <p>Struktur organisasi pengolahan data dengan kemampuan yang terpusat, dan pengolahan paling sedikit bagian dari suatu aplikasi dengan cara yang terdesentralisasi.</p>
+                                  <p>Sejumlah node pengolahan data dihubungkan dengan jaringan telekomunikasi terhadap host (server / pusat) yang juga digunakan untuk mengontrol keseluruhan jaringan.</p>
 				  </section>
 					<section>
-						<h3>VRML 1.0</h3>
-						<p style="font-size:70%">Istilah VRML diciptakan/disebutkan oleh Dave Raggett di sebuah <i>paper</i> berjudul "Extending WWW to support Platform Independent Virtual Reality" yang dikumpulkan di acara <i>First World Wide Web Conference</i> pada tahun 1994</p>
-						<p style="font-size:70%">Kemudian VRML pertama kali didiskusikan di acara WWW94 VRML BOF yang diadakan oleh Tim Berners-Lee</p>
-						<p style="font-size:70%">Pada tahun <strong>1995</strong>, <i>Template Graphics Software</i> mendemokan sebuah VRML plug-in untuk peluncuran beta dari Netscape 2.0</p>
+					<h2>Karakteristik pengolahan data terdistribusi antara lain :</h2>
+                                        <ul>
+                                          <li>Beberapa data digunakan pada banyak lokasi.</li>
+                                          <li>Sering diperlukan sistem manajemen database yang memberikan akses kepada banyak pemakai dengan view yang berbeda dari data yang sama.</li>
+                                          <li>Peningkatan biaya penyimpanan per bit pada unit penyimpan yang sangat besar lebih rendah dibandingkan pada penyimpan yang lebih kecil.</li>
+                                          <li>Beberapa masalah pada data yang terpisah secara geografis adalah masalah integritas, kepemilikan, dan kemacetan (deadlock) ketika banyak processor meng-update data yang sama.</li>
+                                        </ul>
 					</section>
-					<section>
-						<h3>VRML 2.0</h3>
-						<p style="font-size:70%">VRML 2.0 atau VRML 97 adalah spesifikasi VRML yang telah diresmikan oleh ISO (International Standard Organization) pada bulan April <strong>1997</strong> sebagai Bahasa VRML standar dunia</p>
-						<p style="font-size:70%">VRML 2.0 lebih sempurna dari VRML 1.0 dengan perbaikan node (Perintah dasar VRML) lama dan pemberian node baru agar lebih interaktif. Selain itu, VRML97 memungkinkan user melakukan desain lingkungan virtual 3D lebih realistis disertai dengan animasi 3D</p>
-					</section>
-					<section>
-						<h3>X3D</h3>
-						<p style="font-size:70%">X3D adalah standar ISO tanpa royalti untuk merepresentasikan 3D grafik komputer</p>
-						<p style="font-size:70%">X3D adalah penerus dari VRML pertahun <strong>2001</strong></p>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Spesifikasi VRML</h2>
-						<p>Scope</p>
-						<p>References</p>
-						<p>Definitions</p>
-						<p>Concepts</p>
-						<p>Nodes</p>
-						<p>Fields and Events</p>
-						<p>Conformance</p>
-				  </section>
-					<section>
-            <h2>Scope</h2>
-						<p>Scope mendefinisikan masalah-masalah yang ditujukan VRML</p>
-					</section>
-					<section>
-            <h2>References</h2>
-						<p>Reference memberikan daftar standar normatif yang direferensikan di spesifikasi</p>
-					</section>
-					<section>
-            <h2>Definitions</h2>
-						<p>Definition mengandung glosarium dari istilah-istilah yang digunakan di spesifikasi</p>
-					</section>
-					<section>
-            <h2>Concepts</h2>
-						<p>Concept mendeskripsikan berbagai hal yang fundamental pada VRML</p>
-					</section>
-					<section>
-            <h2>Nodes</h2>
-						<p>Node adalah objek di VRML yang memiliki 2 tipe: </p>
+		      <section>
+		      	<h3>Pengolahan data di masa depan merupakan perkembangan mesin komputer yang pesat yang kebanyakan dihubungkan dengan jaringan telekomunikasi. Saat ini telah banyak komputer dengan ukuran kecil dengan harga yang murah. Namun komputer mini tidak akan menggantikan komputer besar, dengan alasan beberapa fungsi dan data masih harus terpusat. Oleh karena itu maka tugas seorang perancang sistem adalah untuk :</h3>
 						<ul>
-							<li>Fisik: Silinder, Kotak, dan lain-lain</li>
-							<li>Non-Fisik: Transformasi, Suara, dan lain-lain</li>
+							<li>memutuskan distribusi mesin atau processor yang bagaimana yang paling baik.</li>
+							<li>Penghubung yang bagaimana yang diperlukan.</li>
+							<li>Di mana data harus disimpan.</li>
 						</ul>
 					</section>
+				<section>
 					<section>
-            <h2>Fields and Events</h2>
-						<p>Field adalah data yang terdapat di Node</p>
-						<p>Event adalah animasi reaksi objek terhadap aksi user</p>
+						<h2>Tujuan Utama Pengolahan Data Terdistribusi :</h2>
+						<p>Otonomi lokal</p>
+						<p>Produktivitas Pemakai</p>
+						<p>Dialog Terminal</p>
+						<p>Jarak menjadi tidak nyata</p>
+						<p>Ketersediaan (<i>availability</i>)</p>
+						<p>Privasi dan Keamanan</p>
+						<p>Audit</p>
+				  </section>
+					<section>
+            <h2>Otonomi lokal</h2>
+						<p>Memberikan tingkat otonomi lokal dalam komputasi kepada kelompok pemakai lokal.</p>
 					</section>
 					<section>
-						<h2>Conformance</h2>
-						<p style="color:#ffffff">Conformance mendeskripsikan syarat pendukung minimum untuk mengimplementasikan VRML</p>
+            <h2>Produktivitas Pemakai</h2>
+						<p>Menyediakan teknik dan bahasa sehingga pemakai dapat memberi hasil yang maksimum dalam menggunakan sistem komputer.</p>
+					</section>
+					<section>
+            <h2>Dialog Terminal</h2>
+						<p>Membuat terminal mudah digunakan dengan struktur dialog yang menghasilkan intelegensia yang terdistribusi.</p>
+					</section>
+					<section>
+            <h2>Jarak menjadi tidak nyata</h2>
+						<p>Membuat jarak menjadi tidak nyata dengan menggunakan jaringan yang sesuai rancangannya.</p>
+					</section>
+					<section>
+            <h2>Ketersediaan (<i>availability</i>)</h2>
+						<p>Menghindari kegagalan sistem yang dapat dilihat oleh pemakai dan memaksimumkan ketersediaan interface sistem bagi pemakai.</p>
+					</section>
+					<section>
+            <h2>Privasi dan Keamanan</h2>
+						<p>Mencegah pengaksesan data dan sumber daya tanpa ijin dan melindungi data dari kegagalan maupun tindak kejahatan.</p>
+					</section>
+					<section>
+						<h2>Audit</h2>
+						<p style="color:#ffffff">Menjamin peng-update-an record yang penting, seperti data keuangan, yang dapat di audit dengan penuh.</p>
 					</section>
 				 </section>
-			        <section>
-				  <section>
-			            <h2>Tipe Pencahayaan</h2>
-			            <p>Directional Light</p>
-			            <p>Point Light</p>
-				    <p>Spot Light</p>
-			          </section>
-				  <section>
-			            <h2>Directional Light</h2>
-			            <p>Fitur pencahayaan yang memancar secara paralel dan mengenaik objek dari arah yang konstan </p>
-			          </section>
-		                  <section>
-			            <h2>Point Light</h2>
-			            <p>Fitur pencahayaan yang memancarkan cahaya secara radiatif seperti matahari</p>		  
-			          </section>
-				  <section>
-				    <h2>Spot Light</h2>
-			            <p>Fitur pencahayaan yang memancarkan cahaya pada spot tertentu pada objek layaknya lampu senter</p>	  
-			          </section>
-			        </section>
+				    <section>
+			            <h2>Macam-macam pengaruh PDT pada organisasi :</h2>
+						  <p>Departemen pemakai memiliki fasilitas komputer dan akses data yang lebih baik.</p>
+							<p>Pengolahan data dapat online dengan waktu respon yang cukup cepat.</p>
+              <p>Departemen pemakai bertanggung jawab dalam menggunakan komputer mereka.</p>
+              <p>Pemasukan data dipindahkan ke departemen pemakai, sehingga mereka bertanggung jawab atas ketepatan datanya.</p>
+              <p>Proses informasi fungsional dapat didistribusikan sedangkan yang strategi dipusatkan.</p>
+			      </section>
+						  <h2>Terdapat dua macam sifat dari database terdistribusi yaitu Heterogenous dan Homogenous :</h2>
+							<p>Homogenous artinya suatu database terdistribusi dimana data di distribusikan pada beberapa komputer dengan menggunakan DBMS(database management system) yang sama. DBMS digunakan pada database terdistribusi untuk melakukan koordinasi data pada beberapa node.</p>
+							<p>Heterogenous adalah kebalikan dari Homogenous dimana data di sebarkan dengan menggunakan DBMS yang berbeda</p>
+						<section>
+							<h2>Keuntungan Distribusi Database :</h2>
+							<p>Pengawasan distribusi dan pengambilan data Jika beberpa site yang berbeda dihubungkan,
+   seorang pemakai yang berada pada satu site dapat mengakses data pada site lain. </p>
+							<p>Reliability dan availability Sistem distribusi dapat terus menerus berfungsi dalam menghadapi
+   kegagalan dari site sendiri atau mata rantai komunikasi antar site.</p>
+							<p>Kecepatan pemrosesan query Contoh : jika site-site gagal dalam sebuah sistem terdistribusi,
+   site lainnya dapat melanjutkan operasi jika data telah direplikasi pada beberapa site.</p>
+					  </section>
+						<section>
+							<h2>Kekurangan Distribusi Database :</h2>
+							<p>Harga software mahal Hal ini disebabkan sangat sulit untuk membuat sistem database distribusi.</p>
+							<p>Kompleksitas Site-site beroperasi secara paralel sehingga lebih sulit untuk menjamin kebenaran
+   dan algoritma. Adanya kesalahan mungkin tak dapat diketahui.</p>
+							<p>Biaya pemrosesan tinggi Perubahan pesan dan penambahan perhitungan dibutuhkan untuk
+   mencapai koordinasi antar site.</p>
+					  </section>
 				<section data-background="#ffffff">
 					<h1 style="color:#000000">Terima Kasih</h1>
 				</section>

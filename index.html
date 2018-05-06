@@ -58,32 +58,25 @@
                                   <p>Sejumlah node pengolahan data dihubungkan dengan jaringan telekomunikasi terhadap host (server / pusat) yang juga digunakan untuk mengontrol keseluruhan jaringan.</p>
 				  </section>
 					<section>
-					<h2>Karakteristik pengolahan data terdistribusi antara lain :</h2>
+					<h3>Karakteristik pengolahan DT :</h3>
                                         <ul>
                                           <li>Beberapa data digunakan pada banyak lokasi.</li>
                                           <li>Sering diperlukan sistem manajemen database yang memberikan akses kepada banyak pemakai dengan view yang berbeda dari data yang sama.</li>
                                           <li>Peningkatan biaya penyimpanan per bit pada unit penyimpan yang sangat besar lebih rendah dibandingkan pada penyimpan yang lebih kecil.</li>
-                                          <li>Beberapa masalah pada data yang terpisah secara geografis adalah masalah integritas, kepemilikan, dan kemacetan (deadlock) ketika banyak processor meng-update data yang sama.</li>
                                         </ul>
-					</section>
-		      <section>
-		      	<h3>Pengolahan data di masa depan merupakan perkembangan mesin komputer yang pesat yang kebanyakan dihubungkan dengan jaringan telekomunikasi. Saat ini telah banyak komputer dengan ukuran kecil dengan harga yang murah. Namun komputer mini tidak akan menggantikan komputer besar, dengan alasan beberapa fungsi dan data masih harus terpusat. Oleh karena itu maka tugas seorang perancang sistem adalah untuk :</h3>
-						<ul>
-							<li>memutuskan distribusi mesin atau processor yang bagaimana yang paling baik.</li>
-							<li>Penghubung yang bagaimana yang diperlukan.</li>
-							<li>Di mana data harus disimpan.</li>
-						</ul>
 					</section>
 				<section>
 					<section>
-						<h2>Tujuan Utama Pengolahan Data Terdistribusi :</h2>
-						<p>Otonomi lokal</p>
-						<p>Produktivitas Pemakai</p>
-						<p>Dialog Terminal</p>
-						<p>Jarak menjadi tidak nyata</p>
-						<p>Ketersediaan (<i>availability</i>)</p>
-						<p>Privasi dan Keamanan</p>
-						<p>Audit</p>
+						<h3>Tujuan Utama Pengolahan DT:</h3>
+            <ul>
+							<li>Otonomi lokal</li>
+							<li>Produktivitas Pemakai</li>
+							<li>Dialog Terminal</li>
+							<li>Jarak menjadi tidak nyata</li>
+							<li>Ketersediaan (<i>availability</i>)</li>
+							<li>Privasi dan Keamanan</li>
+							<li>Audit</li>
+					  </ul>
 				  </section>
 					<section>
             <h2>Otonomi lokal</h2>
@@ -115,35 +108,47 @@
 					</section>
 				 </section>
 				    <section>
-			            <h2>Macam-macam pengaruh PDT pada organisasi :</h2>
+			            <h3>Macam-macam pengaruh pengolahan DT pada organisasi :</h3>
 						  <p>Departemen pemakai memiliki fasilitas komputer dan akses data yang lebih baik.</p>
 							<p>Pengolahan data dapat online dengan waktu respon yang cukup cepat.</p>
               <p>Departemen pemakai bertanggung jawab dalam menggunakan komputer mereka.</p>
-              <p>Pemasukan data dipindahkan ke departemen pemakai, sehingga mereka bertanggung jawab atas ketepatan datanya.</p>
-              <p>Proses informasi fungsional dapat didistribusikan sedangkan yang strategi dipusatkan.</p>
-			      </section>
-				<section>		  
-				<h2>Terdapat dua macam sifat dari database terdistribusi yaitu Heterogenous dan Homogenous :</h2>
-							<p>Homogenous artinya suatu database terdistribusi dimana data di distribusikan pada beberapa komputer dengan menggunakan DBMS(database management system) yang sama. DBMS digunakan pada database terdistribusi untuk melakukan koordinasi data pada beberapa node.</p>
-							<p>Heterogenous adalah kebalikan dari Homogenous dimana data di sebarkan dengan menggunakan DBMS yang berbeda</p>
-				</section>	
+              </section>
+				<section>
+        <section>
+				<h2>Dua macam sifat DT :</h2>
+							<p>Homogenous</p>
+							<p>Heterogenous</p>
+				</section>
+				<section>
+					<h2>Homogenous</h2>
+					<p>Suatu database terdistribusi dimana data di distribusikan pada beberapa komputer dengan menggunakan DBMS(database management system) yang sama. DBMS digunakan pada database terdistribusi untuk melakukan koordinasi data pada beberapa node.</p>
+				</section>
+				<section>
+					<h2>Heterogenous</h2>
+					<p> Kebalikan dari Homogenous dimana data di sebarkan dengan menggunakan DBMS yang berbeda.</p>
+				</section>
+				</section>
 					<section>
-							<h2>Keuntungan Distribusi Database :</h2>
-							<p>Pengawasan distribusi dan pengambilan data Jika beberpa site yang berbeda dihubungkan,
-   seorang pemakai yang berada pada satu site dapat mengakses data pada site lain. </p>
-							<p>Reliability dan availability Sistem distribusi dapat terus menerus berfungsi dalam menghadapi
-   kegagalan dari site sendiri atau mata rantai komunikasi antar site.</p>
-							<p>Kecepatan pemrosesan query Contoh : jika site-site gagal dalam sebuah sistem terdistribusi,
-   site lainnya dapat melanjutkan operasi jika data telah direplikasi pada beberapa site.</p>
-					  </section>
+							<h3>Keuntungan DT:</h3>
+							<ol style="font-size:70%">
+							<li>Pengawasan distribusi dan pengambilan data Jika beberpa site yang berbeda dihubungkan,
+   seorang pemakai yang berada pada satu site dapat mengakses data pada site lain. </li>
+							<li>Reliability dan availability Sistem distribusi dapat terus menerus berfungsi dalam menghadapi
+   kegagalan dari site sendiri atau mata rantai komunikasi antar site.</li>
+							<li>Kecepatan pemrosesan query Contoh : jika site-site gagal dalam sebuah sistem terdistribusi,
+   site lainnya dapat melanjutkan operasi jika data telah direplikasi pada beberapa site.</li>
+ 							</ol>
+						</section>
 						<section>
-							<h2>Kekurangan Distribusi Database :</h2>
-							<p>Harga software mahal Hal ini disebabkan sangat sulit untuk membuat sistem database distribusi.</p>
-							<p>Kompleksitas Site-site beroperasi secara paralel sehingga lebih sulit untuk menjamin kebenaran
-   dan algoritma. Adanya kesalahan mungkin tak dapat diketahui.</p>
-							<p>Biaya pemrosesan tinggi Perubahan pesan dan penambahan perhitungan dibutuhkan untuk
-   mencapai koordinasi antar site.</p>
-					  </section>
+							<h3>Kekurangan DT :</h3>
+							<ol style="font-size:70%">
+							<li>Harga software mahal Hal ini disebabkan sangat sulit untuk membuat sistem database distribusi.</li>
+							<li>Kompleksitas Site-site beroperasi secara paralel sehingga lebih sulit untuk menjamin kebenaran
+   dan algoritma. Adanya kesalahan mungkin tak dapat diketahui.</li>
+							<li>Biaya pemrosesan tinggi Perubahan pesan dan penambahan perhitungan dibutuhkan untuk
+   mencapai koordinasi antar site.</li>
+ 							</ol>
+						</section>
 				<section data-background="#ffffff">
 					<h1 style="color:#000000">Terima Kasih</h1>
 				</section>
